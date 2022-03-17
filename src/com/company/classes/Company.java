@@ -5,13 +5,13 @@ public class Company {
     private String NIP;
     private String REGON;
     private String representative;
-    private String address;
+    private AddressInforamation address;
     private String phone;
 
     public Company() {
     }
 
-    public Company(Integer id, String NIP, String REGON, String representative, String address, String phone) {
+    public Company(Integer id, String NIP, String REGON, String representative, AddressInforamation address, String phone) {
         this.id = id;
         this.NIP = NIP;
         this.REGON = REGON;
@@ -52,11 +52,11 @@ public class Company {
         this.representative = representative;
     }
 
-    public String getAddress() {
+    public AddressInforamation getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(AddressInforamation address) {
         this.address = address;
     }
 

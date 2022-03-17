@@ -5,13 +5,13 @@ public class Person {
     private String pesel;
     private String name;
     private String surname;
-    private String address;
+    private AddressInforamation address;
     private String phone;
 
     public Person() {
     }
 
-    public Person(Integer id, String pesel, String name, String surname, String address, String phone) {
+    public Person(Integer id, String pesel, String name, String surname, AddressInforamation address, String phone) {
         this.id = id;
         this.pesel = pesel;
         this.name = name;
@@ -52,11 +52,11 @@ public class Person {
         this.surname = surname;
     }
 
-    public String getAddress() {
+    public AddressInforamation getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(AddressInforamation address) {
         this.address = address;
     }
 
