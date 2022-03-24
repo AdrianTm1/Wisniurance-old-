@@ -3,7 +3,7 @@ package com.company.classes;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class Risks {
+public class Risk {
     private Integer id;
     private BigDecimal minPrice;
     private BigDecimal maxPrice;
@@ -12,10 +12,10 @@ public class Risks {
     private String description;
     private String policyType;
 
-    public Risks() {
+    public Risk() {
     }
 
-    public Risks(Integer id, BigDecimal minPrice, BigDecimal maxPrice, Date protectionFrom, Date protectionTo, String description, String policyType) {
+    public Risk(Integer id, BigDecimal minPrice, BigDecimal maxPrice, Date protectionFrom, Date protectionTo, String description, String policyType) {
         this.id = id;
         this.minPrice = minPrice;
         this.maxPrice = maxPrice;
