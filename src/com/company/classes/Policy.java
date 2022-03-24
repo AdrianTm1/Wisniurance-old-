@@ -8,7 +8,7 @@ public class Policy {
     private String insuranceHolder;
     private String insuredPerson;
     private String beneficiaryPerson;
-    private String risks;
+    private Risk risk;
     private Date startDate;
     private Date endDate;
     private BigDecimal price;
@@ -16,12 +16,12 @@ public class Policy {
     public Policy() {
     }
 
-    public Policy(Integer id, String insuranceHolder, String insuredPerson, String beneficiaryPerson, String risks, Date startDate, Date endDate, BigDecimal price) {
+    public Policy(Integer id, String insuranceHolder, String insuredPerson, String beneficiaryPerson, Risk risk, Date startDate, Date endDate, BigDecimal price) {
         this.id = id;
         this.insuranceHolder = insuranceHolder;
         this.insuredPerson = insuredPerson;
         this.beneficiaryPerson = beneficiaryPerson;
-        this.risks = risks;
+        this.risk = risk;
         this.startDate = startDate;
         this.endDate = endDate;
         this.price = price;
@@ -59,12 +59,12 @@ public class Policy {
         this.beneficiaryPerson = beneficiaryPerson;
     }
 
-    public String getRisks() {
-        return risks;
+    public Risk getRisks() {
+        return risk;
     }
 
-    public void setRisks(String risks) {
-        this.risks = risks;
+    public void setRisks(Risk risks) {
+        this.risk = risks;
     }
 
     public Date getStartDate() {

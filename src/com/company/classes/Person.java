@@ -1,31 +1,21 @@
 package com.company.classes;
 
-public class Person {
-    private Integer id;
+import com.company.common.AddressInforamation;
+import com.company.model.Customer;
+
+public class Person extends Customer {
     private String pesel;
     private String name;
     private String surname;
-    private AddressInforamation address;
-    private String phone;
 
     public Person() {
     }
 
     public Person(Integer id, String pesel, String name, String surname, AddressInforamation address, String phone) {
-        this.id = id;
+        super(id, address, phone);
         this.pesel = pesel;
         this.name = name;
         this.surname = surname;
-        this.address = address;
-        this.phone = phone;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getPesel() {
@@ -52,19 +42,4 @@ public class Person {
         this.surname = surname;
     }
 
-    public AddressInforamation getAddress() {
-        return address;
-    }
-
-    public void setAddress(AddressInforamation address) {
-        this.address = address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 }

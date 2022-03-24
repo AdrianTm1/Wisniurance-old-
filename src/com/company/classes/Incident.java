@@ -5,14 +5,14 @@ import java.util.Date;
 public class Incident {
     private Integer id;
     private Date incidentDate;
-    private String damage;
+    private Damage damage;
     private String incidentPlace;
     private String incidentCourse;
 
     public Incident() {
     }
 
-    public Incident(Integer id, Date incidentDate, String damage, String incidentPlace, String incidentCourse) {
+    public Incident(Integer id, Date incidentDate, Damage damage, String incidentPlace, String incidentCourse) {
         this.id = id;
         this.incidentDate = incidentDate;
         this.damage = damage;
@@ -36,11 +36,11 @@ public class Incident {
         this.incidentDate = incidentDate;
     }
 
-    public String getDamage() {
+    public Damage getDamage() {
         return damage;
     }
 
-    public void setDamage(String damage) {
+    public void setDamage(Damage damage) {
         this.damage = damage;
     }
 

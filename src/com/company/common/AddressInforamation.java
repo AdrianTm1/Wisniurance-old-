@@ -1,4 +1,4 @@
-package com.company.classes;
+package com.company.common;
 
 public class AddressInforamation {
     private String streetName;
